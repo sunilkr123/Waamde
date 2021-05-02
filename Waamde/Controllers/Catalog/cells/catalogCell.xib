@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="66" id="KGk-i7-Jjw" customClass="catalogCell" customModule="Waamde" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="311" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="311" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1v-PU-tzj">
+                        <rect key="frame" x="5" y="5" width="301" height="56"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ru-Ga-SuW">
+                                <rect key="frame" x="10" y="8" width="40" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shopping-cart" translatesAutoresizingMaskIntoConstraints="NO" id="M49-NK-7SC">
+                                        <rect key="frame" x="8" y="8" width="24" height="24"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9566217065" green="0.95609611269999994" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="M49-NK-7SC" secondAttribute="bottom" constant="8" id="8Zk-Vd-spv"/>
+                                    <constraint firstItem="M49-NK-7SC" firstAttribute="top" secondItem="2Ru-Ga-SuW" secondAttribute="top" constant="8" id="Nod-jM-00C"/>
+                                    <constraint firstAttribute="trailing" secondItem="M49-NK-7SC" secondAttribute="trailing" constant="8" id="OoV-SD-D4J"/>
+                                    <constraint firstAttribute="height" constant="40" id="UVX-cA-7Iu"/>
+                                    <constraint firstItem="M49-NK-7SC" firstAttribute="leading" secondItem="2Ru-Ga-SuW" secondAttribute="leading" constant="8" id="VZ8-X1-EGJ"/>
+                                    <constraint firstAttribute="width" constant="40" id="jCx-i5-cYJ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3i-k6-dSz" customClass="CardView" customModule="Waamde" customModuleProvider="target">
+                                <rect key="frame" x="251" y="8" width="40" height="40"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowRight" translatesAutoresizingMaskIntoConstraints="NO" id="f3I-uR-9I0">
+                                        <rect key="frame" x="10" y="10" width="20" height="20"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="f3I-uR-9I0" secondAttribute="bottom" constant="10" id="1eE-co-QOB"/>
+                                    <constraint firstAttribute="width" constant="40" id="Jkp-Sz-TJv"/>
+                                    <constraint firstItem="f3I-uR-9I0" firstAttribute="top" secondItem="c3i-k6-dSz" secondAttribute="top" constant="10" id="Oaw-Yl-Rfy"/>
+                                    <constraint firstAttribute="trailing" secondItem="f3I-uR-9I0" secondAttribute="trailing" constant="10" id="VZC-uS-1G7"/>
+                                    <constraint firstAttribute="height" constant="40" id="aZL-tj-NhK"/>
+                                    <constraint firstItem="f3I-uR-9I0" firstAttribute="leading" secondItem="c3i-k6-dSz" secondAttribute="leading" constant="10" id="dor-J8-iRj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clothing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JcO-pg-iEN">
+                                <rect key="frame" x="60" y="19" width="57.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2Ru-Ga-SuW" firstAttribute="centerY" secondItem="h1v-PU-tzj" secondAttribute="centerY" id="4d3-Ee-ABa"/>
+                            <constraint firstItem="JcO-pg-iEN" firstAttribute="centerY" secondItem="2Ru-Ga-SuW" secondAttribute="centerY" id="7cg-Zq-PVr"/>
+                            <constraint firstAttribute="trailing" secondItem="c3i-k6-dSz" secondAttribute="trailing" constant="10" id="NRm-1m-ejD"/>
+                            <constraint firstItem="JcO-pg-iEN" firstAttribute="leading" secondItem="2Ru-Ga-SuW" secondAttribute="trailing" constant="10" id="ZoS-z3-vhX"/>
+                            <constraint firstItem="2Ru-Ga-SuW" firstAttribute="leading" secondItem="h1v-PU-tzj" secondAttribute="leading" constant="10" id="gdf-Sw-2dh"/>
+                            <constraint firstItem="c3i-k6-dSz" firstAttribute="centerY" secondItem="h1v-PU-tzj" secondAttribute="centerY" id="uLN-Hu-fbN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="h1v-PU-tzj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="2Ix-LT-d6q"/>
+                    <constraint firstAttribute="trailing" secondItem="h1v-PU-tzj" secondAttribute="trailing" constant="5" id="D0e-g0-seD"/>
+                    <constraint firstAttribute="bottom" secondItem="h1v-PU-tzj" secondAttribute="bottom" constant="5" id="bdk-OH-f7N"/>
+                    <constraint firstItem="h1v-PU-tzj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="k3g-oo-Ry2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgvIcon" destination="M49-NK-7SC" id="icz-vo-5ai"/>
+                <outlet property="lblData" destination="JcO-pg-iEN" id="x3L-oX-2rw"/>
+            </connections>
+            <point key="canvasLocation" x="131.15942028985509" y="113.83928571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowRight" width="64" height="64"/>
+        <image name="shopping-cart" width="64" height="64"/>
+    </resources>
+</document>

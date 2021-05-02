@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "shopping-cart-empty-side-view.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoryTitleCell" id="gTV-IL-0wX" customClass="categoryTitleCell" customModule="Waamde" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="39"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="39"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggi-MU-CHw">
+                        <rect key="frame" x="5" y="5" width="128" height="29"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5W-FM-lku">
+                                <rect key="frame" x="52.5" y="6.5" width="23.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="L5W-FM-lku" firstAttribute="centerY" secondItem="ggi-MU-CHw" secondAttribute="centerY" id="2JZ-6L-KDt"/>
+                            <constraint firstItem="L5W-FM-lku" firstAttribute="centerX" secondItem="ggi-MU-CHw" secondAttribute="centerX" id="Uh9-g0-oHc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ggi-MU-CHw" secondAttribute="bottom" constant="5" id="ElZ-ni-yhP"/>
+                <constraint firstItem="ggi-MU-CHw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Lpr-1n-g7b"/>
+                <constraint firstAttribute="trailing" secondItem="ggi-MU-CHw" secondAttribute="trailing" constant="5" id="e9Z-NX-usb"/>
+                <constraint firstItem="ggi-MU-CHw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="tGR-fZ-btW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="138" height="39"/>
+            <connections>
+                <outlet property="lblTitle" destination="L5W-FM-lku" id="sJp-qI-6nx"/>
+                <outlet property="wholeView" destination="ggi-MU-CHw" id="I69-GU-DsL"/>
+            </connections>
+            <point key="canvasLocation" x="201.44927536231884" y="124.88839285714285"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCVC" customModule="Waamde" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="144" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="144" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dress.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="V0Q-V5-Ekv">
+                        <rect key="frame" x="5" y="5" width="134" height="120"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="120" id="5n8-ey-PEv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$300" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAn-Qe-JPU">
+                        <rect key="frame" x="5" y="157" width="84" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="HE1-qj-w0V"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" name="AccentColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jacket" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6z-3k-Dwf">
+                        <rect key="frame" x="5" y="152" width="134" height="0.0"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="LNX-d4-PX1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="H&amp;M" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4J-P6-OoI">
+                        <rect key="frame" x="5" y="130" width="134" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMb-fY-om6">
+                        <rect key="frame" x="109" y="152" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="WtO-pY-WBO"/>
+                            <constraint firstAttribute="width" constant="25" id="kWe-q9-Edl"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="3" minY="3" maxX="3" maxY="3"/>
+                        <state key="normal" image="heart (1)"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="JMb-fY-om6" firstAttribute="leading" secondItem="NAn-Qe-JPU" secondAttribute="trailing" constant="20" id="48v-ZO-G3f"/>
+                <constraint firstItem="NAn-Qe-JPU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="ERB-VB-AGu"/>
+                <constraint firstItem="V0Q-V5-Ekv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="HuV-em-z77"/>
+                <constraint firstItem="S6z-3k-Dwf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Mla-PX-0Il"/>
+                <constraint firstItem="V0Q-V5-Ekv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="O0p-oM-Rey"/>
+                <constraint firstAttribute="trailing" secondItem="S4J-P6-OoI" secondAttribute="trailing" constant="5" id="T3n-Rz-ugY"/>
+                <constraint firstItem="S6z-3k-Dwf" firstAttribute="top" secondItem="S4J-P6-OoI" secondAttribute="bottom" constant="5" id="Tt5-Oi-yTX"/>
+                <constraint firstAttribute="trailing" secondItem="V0Q-V5-Ekv" secondAttribute="trailing" constant="5" id="VkR-sh-tKy"/>
+                <constraint firstAttribute="trailing" secondItem="S6z-3k-Dwf" secondAttribute="trailing" constant="5" id="YgY-1D-tOC"/>
+                <constraint firstItem="S4J-P6-OoI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="eV0-Gd-zua"/>
+                <constraint firstAttribute="trailing" secondItem="JMb-fY-om6" secondAttribute="trailing" constant="10" id="jLu-y6-Cdt"/>
+                <constraint firstItem="JMb-fY-om6" firstAttribute="top" secondItem="S6z-3k-Dwf" secondAttribute="bottom" id="tAa-Nq-A6X"/>
+                <constraint firstItem="NAn-Qe-JPU" firstAttribute="top" secondItem="S6z-3k-Dwf" secondAttribute="bottom" constant="5" id="xye-p7-Mdk"/>
+                <constraint firstItem="S4J-P6-OoI" firstAttribute="top" secondItem="V0Q-V5-Ekv" secondAttribute="bottom" constant="5" id="yQT-a6-teL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="144" height="215"/>
+            <connections>
+                <outlet property="btnHeart" destination="JMb-fY-om6" id="b6r-VP-Zvf"/>
+                <outlet property="imgProduct" destination="V0Q-V5-Ekv" id="P5k-HZ-5q5"/>
+                <outlet property="lblDesc" destination="S6z-3k-Dwf" id="U0H-Id-7zj"/>
+                <outlet property="lblName" destination="S4J-P6-OoI" id="0wI-nM-W0W"/>
+                <outlet property="lblPrice" destination="NAn-Qe-JPU" id="Dgg-uA-ONe"/>
+            </connections>
+            <point key="canvasLocation" x="118.84057971014494" y="47.209821428571423"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="dress.jpg" width="473" height="593"/>
+        <image name="heart (1)" width="512" height="512"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
